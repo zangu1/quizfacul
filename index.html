@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz - O Mentalista</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+<style>
+  body {
+    background: #0f1016;
+    min-height: 100vh;
+  }
+  .pergunta-imagem {
+    max-height: 220px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .opcao {
+    text-align: left;
+  }
+</style>
+</head>
+<body class="py-5">
+<div class="container" style="max-width: 560px;">
+
+  <div class="text-center mb-4">
+    <svg viewBox="0 0 100 100" width="90" height="90" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="48" fill="#1b1d29" stroke="#8a6bff" stroke-width="2"/>
+      <ellipse cx="50" cy="40" rx="16" ry="17" fill="#e8d4b8"/>
+      <path d="M28 34 Q50 8 72 34 L72 30 Q50 14 28 30 Z" fill="#14151f"/>
+      <rect x="24" y="26" width="52" height="8" rx="3" fill="#14151f"/>
+      <path d="M20 30 Q50 20 80 30 L80 34 Q50 26 20 34 Z" fill="#14151f"/>
+      <rect x="20" y="46" width="10" height="4" fill="#14151f"/>
+      <rect x="70" y="46" width="10" height="4" fill="#14151f"/>
+      <path d="M30 78 Q50 58 70 78 L70 92 L30 92 Z" fill="#8a6bff"/>
+      <rect x="46" y="72" width="8" height="14" fill="#eceef4"/>
+    </svg>
+    <h1 class="h3 text-primary mt-2 mb-1">Quiz - O Mentalista</h1>
+    <p class="text-secondary small mb-0">Teste seus conhecimentos sobre Patrick Jane e a CBI</p>
+  </div>
+
+  <div id="status" class="text-center text-secondary mb-3"></div>
+  <div id="quiz"></div>
+  <div id="placar" class="text-center text-primary fw-bold mt-3"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
